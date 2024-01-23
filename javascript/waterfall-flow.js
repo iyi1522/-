@@ -9,7 +9,7 @@ function creatImg() {
     // i <= 47 表示设置了47张图片  图片放多少张就写多少，如果写多了，底下就会出现你看到的那种效果
     //反正就是将images文件夹中的jpg图片命名从1.jpg开始，一直命名 i<= 多少的数字 .jpg 
     for (var i = 1; i <= 66; i++) {
-        var src = `../images/${i}.jpg`//循环拿到照片  jpg表示images文件夹中图片后缀名
+        var src = `images/${i}.jpg`//循环拿到照片  jpg表示images文件夹中图片后缀名
         var img = document.createElement('img')//创建img元素
         img.src = src;//设置图片的src地址
         img.style.width = imgWidth; //设置图宽度
